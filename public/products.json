@@ -1,0 +1,113 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Samsung Galaxy Note 8",
+      "image": "https://sg-live-02.slatic.net/p/2/samsung-galaxy-note-8-1505469101-01784085-5b1ea530f835c851b991fe7149f3cafc-catalog_233.jpg",
+      "finalPrice": "SGD 1,198.00",
+      "discount": "-14%",
+      "oldPrice": "SGD 1,398.00",
+      "review": 3
+    },
+    {
+      "id": "2",
+      "name": "iPhone 8",
+      "image": "https://sg-live-01.slatic.net/p/2/telco-set-iphone-8-1506054863-31381806-aac4824502c8d45bf6db4bba87812a20-catalog_233.jpg",
+      "finalPrice": "SGD 1,188.00",
+      "discount": "-14%",
+      "oldPrice": "SGD 1,388.00",
+      "review": 114
+    },
+    {
+      "id": "3",
+      "name": "Google Pixel 2 64GB",
+      "image": "https://sg-live-01.slatic.net/p/2/google-pixel-2-64gb-just-black-1507149233-10065346-ad3597c0f69d3487c1e6c3c904e3bcd2-catalog_233.jpg",
+      "finalPrice": "SGD 1,189.00",
+      "discount": "-17%",
+      "oldPrice": "SGD 1,438.00",
+      "review": 5
+    },
+    {
+      "id": "4",
+      "name": "Apple iPhone X",
+      "image": "https://sg-live-03.slatic.net/p/2/apple-iphone-x-1509372102-58923317-90f6c151af1f7da7bbe42daaee8b74f5-catalog_233.jpg",
+      "finalPrice": "SGD 1,648.00",
+      "discount": "-13%",
+      "oldPrice": "SGD 1,900.00",
+      "review": 20
+    },
+    {
+      "id": "5",
+      "name": "Xiaomi Redmi 4A 2GB/16GB Dual SIM Gold",
+      "image": "https://sg-live-03.slatic.net/p/2/xiaomi-redmi-4a-2gb16gb-dual-sim-gold-1479202382-52302401-1bcfd596ff818c32ba23cbc00ac7466d-catalog_233.jpg",
+      "finalPrice": "SGD 115.00",
+      "discount": "-42%",
+      "oldPrice": "SGD 199.00",
+      "review": 137
+    },
+    {
+      "id": "6",
+      "name": "Asus Zenfone 4 Max Pro ZC554KL",
+      "image": "https://sg-live-01.slatic.net/p/2/asus-zenfone-4-max-pro-zc554kl-deepsea-black-1507919784-18517866-29ad2fae7147a656de1630803f9131b7-catalog_233.jpg",
+      "finalPrice": "SGD 335.90",
+      "discount": "-14%",
+      "oldPrice": "SGD 399.00",
+      "review": 3
+    },
+    {
+      "id": "7",
+      "name": "OnePlus 5T Dual Sim",
+      "image": "https://sg-live-01.slatic.net/p/2/oneplus-5t-dual-sim-8gb-128gb-midnight-black-intl-1511859681-35440708-1a204aa15f6cf8c736091c19ec42d5d3-catalog_233.jpg",
+      "finalPrice": "SGD 1,019.00",
+      "discount": "-15%",
+      "oldPrice": "SGD 1,199.00",
+      "review": 15
+    },
+    {
+      "id": "8",
+      "name": "Huawei Mate 9 64GB",
+      "image": "https://sg-live-02.slatic.net/p/2/huawei-mate-9-64gb-lte-local-1480494427-37923701-c46971fecb5db06fdd3b9887bba7b199-catalog_233.jpg",
+      "finalPrice": "SGD 616.00",
+      "discount": "-31%",
+      "oldPrice": "SGD 899.00",
+      "review": 3
+    },
+    {
+      "id": "9",
+      "name": "Sony Xperia XA",
+      "image": "https://sg-live-01.slatic.net/p/2/sony-xperia-xa-dual-16gb-black-export-1470643241-4843138-02f340c6e82c7dfe80418f13895c3f41-catalog_233.jpg",
+      "finalPrice": "SGD 1,098.00",
+      "discount": "-8%",
+      "oldPrice": "SGD 1,199.00",
+      "review": 9
+    },
+    {
+      "id": "10",
+      "name": "LG V30",
+      "image": "https://sg-live-02.slatic.net/p/2/telco-lg-v30-4gb-ram-128gb-storage-1513067541-38854088-d74aea8c838e68cefc416ccc233dfb45-catalog_233.jpg",
+      "finalPrice": "SGD 184.00",
+      "discount": "-59%",
+      "oldPrice": "SGD 449.00",
+      "review": 7
+    },
+    {
+      "id": "11",
+      "name": "Blackberry Keyone",
+      "image": "https://sg-live-03.slatic.net/p/2/blackberry-keyone-black-edition-4gb-ram-64gb-storage-1509521421-32268196-464c490bb0c6f340b270b2a246142021-catalog_233.jpg",
+      "finalPrice": "SGD 779.90",
+      "discount": "-9%",
+      "oldPrice": "SGD 858.00",
+      "review": 1
+    }
+    ,
+    {
+      "id": "12",
+      "name": "Motorola Moto Z2",
+      "image": "https://sg-live-02.slatic.net/p/2/motorola-moto-z2-play-4gb64gb-gery-1-year-local-warranty-1505921442-50247274-eb5d37dcca6f65a4e26550c5be16c6aa-catalog_233.jpg",
+      "finalPrice": "SGD 699.00",
+      "discount": "-30%",
+      "oldPrice": "SGD 999.00",
+      "review": 4
+    }
+  ]
+}

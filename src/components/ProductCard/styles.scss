@@ -1,0 +1,43 @@
+.final-price {
+  color: #d21f30;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.discount {
+  padding: 3px 5px;
+  margin: 0 0 0 5px;
+  background: #D4232B;
+  color: #fff;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: #4c4849;
+  font-size: 12px;
+  margin: 3px 0 0;
+}
+
+.product-card {
+  &:hover {
+    .image_overlay {
+      background-color: red;
+      opacity: 0.7;
+    }
+
+    .view_details {
+      opacity: 1;
+      font-size: 15px;
+      top: 35%;
+      //transition: all 200ms ease-out;
+    }
+  }
+  .view_details {
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

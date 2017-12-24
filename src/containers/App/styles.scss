@@ -1,0 +1,15 @@
+.content {
+  position: relative;
+  width: 1220px;
+  margin: 0 auto;
+
+  &-product-list {
+    background-color: #fff;
+    padding: 24px;
+    min-height: 280px;
+  }
+}
+
+.app-layout {
+  min-width: 1220px;
+}
