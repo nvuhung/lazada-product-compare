@@ -19,18 +19,22 @@ class SearchProduct extends Component {
     if (!value) {
       this.setState({ options: [] });
     } else {
-      const res = await fetch('products.json')
-      const {products} = await res.json()
-      const options = products.filter(product => 
-        product.name.toLowerCase().indexOf(value.toLowerCase()) > -1
-      )
+      const {products} = await (await fetch('products.json')).json()
+
+      const productSelected = 
+        (this.props.products && this.props.products.map(product => product.id)) || []
+          
+      const options = products.filter(product => {
+        return product.name.toLowerCase().indexOf(value.toLowerCase()) > -1
+        && (!productSelected.length || productSelected.indexOf(product.id) === -1)
+      })
       this.setState({options})
     }
   }
 
   onSelect(producId) {
     const product = this.state.options.find(product => product.id === producId)
-    this.props.onSelect(product);
+    this.props.compare(product);
   }
 
   render() {
@@ -41,13 +45,13 @@ class SearchProduct extends Component {
     return (
       <Select
         mode="combobox"
-        style={{ width: 200 }}
+        style={{ width: '100%' }}
         onSearch={this.handleChange}
         showArrow={false}
         filterOption={false}
         getPopupContainer={() => container}
         onSelect={this.onSelect}
-        placeholder="Enter the account name"
+        placeholder="Enter the phone name..."
       >
         {options}
       </Select>

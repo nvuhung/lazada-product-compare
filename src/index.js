@@ -7,6 +7,7 @@ import {Provider} from 'react-redux'
 import thunkMiddleware from 'redux-thunk'
 import reducer from './reducers'
 import App from './containers/App'
+import ScrollToTop from './components/ScrollToTop'
 import './styles.css'
 
 const store = createStore(
@@ -19,7 +20,9 @@ const store = createStore(
 ReactDOM.render(
   <Provider store={store}>
     <BrowserRouter>
-      <App />
+      <ScrollToTop>
+        <App />
+      </ScrollToTop>
     </BrowserRouter>
   </Provider>,
   document.getElementById('root')

@@ -1,5 +1,6 @@
 import React from 'react'
 import { Icon } from 'antd'
+import Image from '../Image'
 
 const StickCard = ({product, remove}) => 
   <div>
@@ -9,9 +10,8 @@ const StickCard = ({product, remove}) =>
       className="icon-remove"
       type="close-circle-o" />
     <a style={{display: 'flex'}}>
-      <img 
-        width="80" 
-        height="80" 
+      <Image
+        style={{width: 80, height: 80}}
         alt={product.name} 
         src={product.image} />
       <div>

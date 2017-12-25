@@ -42,9 +42,7 @@ class Home extends Component {
           productCompare.length > 0 &&
           <StickCompare
             showMore={this.showMore.bind(this)}
-            compare={actions.compare}
-            remove={actions.compare}
-            removeAll={actions.removeAllCompareProduct}
+            {...actions}
             products={productCompare} />
         }
       </div>

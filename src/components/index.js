@@ -4,6 +4,7 @@ import LazadaHeader from './Header'
 import ProductCard from './ProductCard'
 import ProductList from './ProductList'
 import StickCompare from './StickCompare'
+import SearchProduct from './SearchProduct'
 
 export {
     BreadCrumb,
@@ -11,5 +12,6 @@ export {
     LazadaHeader,
     ProductCard,
     ProductList,
-    StickCompare
+    StickCompare,
+    SearchProduct
 }

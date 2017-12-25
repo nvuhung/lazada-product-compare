@@ -2,13 +2,15 @@
   position: fixed;
   display: block;
   bottom: 0;
-  right: 100px;
-  left: 100px;
+  width: 1220px;
 }
 
 .fixed-position {
   top: 0 !important;
   left: 0 !important;
+  .ant-popover-arrow {
+    display: none !important;
+  }
 }
 
 #remove-confirm {

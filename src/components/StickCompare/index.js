@@ -1,13 +1,13 @@
-import React from 'react'
+import React, {Component} from 'react'
 import {Col, Row, Popconfirm, Button, Icon} from 'antd'
 import './styles.css'
 import StickCard from './StickCard'
-import SearchProduct from '../../components/SearchProduct'
+import SearchProduct from '../SearchProduct'
 import PropTypes from 'prop-types'
 
 const MAX_PRODUCT = 3
 
-class StickCompare extends React.Component {
+class StickCompare extends Component {
 
 	constructor(props) {
 		super(props)
@@ -30,7 +30,7 @@ class StickCompare extends React.Component {
 	}
 
 	render() {
-		const {remove, removeAll, showMore} = this.props
+		const {compare, removeAllCompareProduct, showMore} = this.props
 		const products = Array(MAX_PRODUCT).fill({})
 
 		this.props.products.forEach((product, index) =>
@@ -53,7 +53,7 @@ class StickCompare extends React.Component {
 							<Popconfirm
 								getPopupContainer={() => document.getElementById('remove-confirm')}
 								title="Are you sure delete all product compare?" 
-								onConfirm={removeAll}
+								onConfirm={removeAllCompareProduct}
 								overlayClassName="fixed-position"
 								okText="Yes" 
 								cancelText="No">
@@ -77,11 +77,11 @@ class StickCompare extends React.Component {
 													? <StickCard 
 															key={idx} 
 															product={product} 
-															remove={remove} /> 
-													: <div id={`search-product-${idx}`}>
+															remove={compare} /> 
+													: <div id={`stick-search-product-${idx}`}>
 															<SearchProduct 
-																onSelect={this.onSelect}
-																container={`search-product-${idx}`} 
+																{...this.props}
+																container={`stick-search-product-${idx}`} 
 																key={idx} />
 														</div>
 											}

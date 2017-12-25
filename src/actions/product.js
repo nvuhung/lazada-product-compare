@@ -20,7 +20,7 @@ export const removeAllCompareProduct = () => ({
 	type: types.REMOVE_ALL_COMPARE_PRODUCT
 })
 
-export const searchProducts = productIds =>
+export const searchByIds = productIds =>
 	dispatch => 
 		fetch(`products.json`)
 			.then(response => response.json())
@@ -29,13 +29,17 @@ export const searchProducts = productIds =>
 					productIds.indexOf(product.id) > -1
 				)
 				dispatch({
-					type: types.SEARCH_PRODUCT,
+					type: types.SEARCH_PRODUCT_BY_ID,
 					payload: data
 				})
 			})
 
-export const seachByName = name => ({
-	type: types.SEARCH_PRODUCT_BY_NAME,
-	name
+export const removeProduct = product => ({
+	type: types.REMOVE_PRODUCT,
+	product
 })
-      
+
+export const addProduct = product => ({
+	type: types.ADD_PRODUCT,
+	product
+})
